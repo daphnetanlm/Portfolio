@@ -42,9 +42,9 @@ a{color:#2F3CFF}a:hover{color:#1C26C4}
 <section aria-label="Project facts" style="border-top: 1px solid #E4E4E7; border-bottom: 1px solid #E4E4E7">
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr))">
 <div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">ROLE</p><p style="margin: 0; font-size: 16px">Solo: product, design, build, listing and marketing</p></div>
-<div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">TIMELINE</p><p style="margin: 0; font-size: 16px">Live 15 Oct 2026 · v1.2 on 3 Nov 2026</p></div>
+<div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">TIMELINE</p><p style="margin: 0; font-size: 16px">Live 15 Oct 2026 · v1.3 on 18 Nov 2026</p></div>
 <div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">STACK</p><p style="margin: 0; font-size: 16px">React Native, Expo, Apple Vision (on-device), iCloud, StoreKit</p></div>
-<div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">MODEL</p><p style="margin: 0; font-size: 16px">Free for five beans, one-time unlock for unlimited beans and the Brew Log</p></div>
+<div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">MODEL</p><p style="margin: 0; font-size: 16px">Free for five beans and two brews per bean; one-time unlock for unlimited use</p></div>
 </div>
 </section>
 
@@ -93,11 +93,13 @@ a{color:#2F3CFF}a:hover{color:#1C26C4}
 </section>
 
 <section style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 72px 0; border-bottom: 1px solid #E4E4E7">
-<div style="flex: 1 1 260px"><p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">04</p><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: -0.02em; line-height: 1.15">Shipping v1.2</h2></div>
+<div style="flex: 1 1 260px"><p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">04</p><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: -0.02em; line-height: 1.15">Four releases in five weeks</h2></div>
 <div style="flex: 999 1 560px; display: flex; flex-direction: column; gap: 16px; color: #3F4249">
 <p style="margin: 0">Less than three weeks after launch, version 1.2 added a <strong style="color: #0A0A0B">Brew Log</strong> (method, dose, grind, yield, time, rating), a <strong style="color: #0A0A0B">coffee-remaining</strong> estimate that updates with every brew, iCloud photo sync, a finer 1–100 grind scale and prices in the user's own currency.</p>
 <p style="margin: 0">Reviewing the code before release, I found a serious bug: brew logs were filed by a bean's position in the list. Adding a new bean shifted every log onto the wrong bean. I gave each bean a permanent ID, migrated existing logs on first launch, and also fixed a sync issue that reverted edits after a relaunch.</p>
-<p style="margin: 0">I also moved builds from a cloud service into Xcode and put the project under version control, so every release is repeatable.</p>
+<p style="margin: 0">Version 1.3 (18 November 2026) made the journal shareable. <strong style="color: #0A0A0B">Bean cards</strong> turn a bag into one neat image (photo, roaster, origin, price, tasting notes, best recipe and rating) to send on Messages, WhatsApp or Instagram, while the journal itself stays private. Editing or repeating a brew now takes one tap, roasters have their own field that the label reader fills in, and each bean can be priced in the currency it was bought in.</p>
+<p style="margin: 0">I also changed the free tier. Instead of locking the Brew Log behind the paywall, free users can now log two brews per bean, so they try the paid feature before deciding to unlock it.</p>
+<p style="margin: 0">Behind the scenes, I moved builds from a cloud service into Xcode and put the project under version control, so every release is repeatable.</p>
 </div>
 </section>
 
@@ -111,7 +113,7 @@ a{color:#2F3CFF}a:hover{color:#1C26C4}
 <section style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 72px 0">
 <div style="flex: 1 1 260px"><p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">06</p><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: -0.02em; line-height: 1.15">What's next</h2></div>
 <div style="flex: 999 1 560px; display: flex; flex-direction: column; gap: 16px; color: #3F4249">
-<p style="margin: 0">Home Screen widgets and Shortcuts, a clearer paywall that lists only what the purchase unlocks, and smarter price sorting for currencies like yen and won.</p>
+<p style="margin: 0">Home Screen widgets and Shortcuts, so a brew can be logged without opening the app.</p>
 </div>
 </section>
 
