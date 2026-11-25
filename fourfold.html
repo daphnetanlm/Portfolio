@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case study: Building FourFold — Daphne Tan</title>
+<meta name="description" content="How Daphne Tan scoped, built and repositioned FourFold: Journal & Planner, and got it through App Store review.">
+<meta property="og:title" content="Case study: Building FourFold — Daphne Tan">
+<meta property="og:description" content="How Daphne Tan scoped, built and repositioned FourFold: Journal & Planner, and got it through App Store review.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Inter+Tight:wght@500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+a{color:#2F3CFF}a:hover{color:#1C26C4}
+</style>
+</head>
+<body>
+<div style="width: 100%; background: #FFFFFF; color: #0A0A0B; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.65">
+
+<header style="border-bottom: 1px solid #E4E4E7">
+<nav aria-label="Case study" style="max-width: 1200px; margin: 0 auto; padding: 22px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #0A0A0B; text-decoration: none">← Back to portfolio</a>
+<a href="index.html" style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: -0.01em; color: #0A0A0B; text-decoration: none">Daphne Tan</a>
+</nav>
+</header>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px 32px 72px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">CASE STUDY · FOURFOLD</p>
+<h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: 1.04; letter-spacing: -0.035em">From a rejected "brain dump" app to an approved journal and planner.</h1>
+<p style="margin: 0; max-width: 600px; font-size: 20px; color: #5C5F66">How I scoped, built and repositioned FourFold on my own, and got it through App Store review on the second attempt.</p>
+<a href="https://apps.apple.com/sg/app/fourfold-journal-planner/id6809665150" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #0A0A0B; color: #FFFFFF; font-weight: 500; text-decoration: none">View on the App Store ↗</a>
+</div>
+<div style="flex: 1 1 280px; display: flex; justify-content: center">
+<video src="assets/fourfold-reel.mp4" poster="assets/fourfold-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="FourFold product reel" style="width: 280px; aspect-ratio: 9 / 16; border-radius: 20px; background: #000000; display: block"></video>
+</div>
+</section>
+
+<section aria-label="Project facts" style="border-top: 1px solid #E4E4E7; border-bottom: 1px solid #E4E4E7">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr))">
+<div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">ROLE</p><p style="margin: 0; font-size: 16px">Solo: product, design, build, listing and launch</p></div>
+<div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">TIMELINE</p><p style="margin: 0; font-size: 16px">Sept 2026 build → live 16 Nov 2026</p></div>
+<div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">STACK</p><p style="margin: 0; font-size: 16px">Swift, SwiftUI, SwiftData, CloudKit, EventKit, StoreKit 2</p></div>
+<div style="padding: 28px 24px 28px 0"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">HOW</p><p style="margin: 0; font-size: 16px">Built with AI-assisted coding in Xcode; Notion as the single source of truth</p></div>
+</div>
+</section>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 24px 32px 96px; display: flex; flex-direction: column">
+
+<section style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 72px 0; border-bottom: 1px solid #E4E4E7">
+<div style="flex: 1 1 260px"><p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">01</p><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: -0.02em; line-height: 1.15">The problem</h2></div>
+<div style="flex: 999 1 560px; display: flex; flex-direction: column; gap: 16px; color: #3F4249">
+<p style="margin: 0">Tasks, half-made decisions, ideas and worries all end up in the same notes app, or nowhere. I wanted one daily view that sorts what's on your mind by what it actually is, so each thing gets the right next step.</p>
+<p style="margin: 0">The answer was four fixed sections: <strong style="color: #0A0A0B">To-Dos</strong> to get done, <strong style="color: #0A0A0B">Decisions</strong> to think through, <strong style="color: #0A0A0B">Ideas</strong> to give a first step, and <strong style="color: #0A0A0B">Let Go</strong> for things to stop carrying.</p>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 72px 0; border-bottom: 1px solid #E4E4E7">
+<div style="flex: 1 1 260px"><p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">02</p><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: -0.02em; line-height: 1.15">Reading the market</h2></div>
+<div style="flex: 999 1 560px; display: flex; flex-direction: column; gap: 16px; color: #3F4249">
+<p style="margin: 0">Before building, I mapped the category. At least seven App Store apps used "brain dump" in their name. Most were single-stream capture with AI sorting or voice notes on top, and most charged a subscription.</p>
+<p style="margin: 0">So I positioned FourFold on what they didn't do:</p>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px">
+<li>A fixed structure by <em>type</em> of thought, not free-form notes with tags</li>
+<li>Fully manual and private: no AI, no account, data only on the phone and the user's own iCloud</li>
+<li>Calendar on the same page, with entries that can be scheduled and moved</li>
+<li>A five-day free trial, then a one-time purchase in a subscription-heavy category</li>
+</ul>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 72px 0; border-bottom: 1px solid #E4E4E7">
+<div style="flex: 1 1 260px"><p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">03</p><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: -0.02em; line-height: 1.15">Building in phases</h2></div>
+<div style="flex: 999 1 560px; display: flex; flex-direction: column; gap: 20px; color: #3F4249">
+<p style="margin: 0">I ran the build like a small Scrum project: one phase at a time, each tested before the next.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 12px">
+<div style="padding: 20px; border-radius: 16px; background: #F6F6F7"><p style="margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">PHASE 1</p><p style="margin: 0; color: #0A0A0B">Data model, on-device storage and iCloud sync first, so nothing built later could lose entries</p></div>
+<div style="padding: 20px; border-radius: 16px; background: #F6F6F7"><p style="margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">PHASE 2</p><p style="margin: 0; color: #0A0A0B">The daily view, mood check-in, diary, reminders, Face ID lock and dark mode</p></div>
+<div style="padding: 20px; border-radius: 16px; background: #F6F6F7"><p style="margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">PHASE 3</p><p style="margin: 0; color: #0A0A0B">Free trial and one-time purchase with StoreKit 2, synced across the user's devices</p></div>
+<div style="padding: 20px; border-radius: 16px; background: #F6F6F7"><p style="margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C5F66">PHASE 4</p><p style="margin: 0; color: #0A0A0B">"First step" scheduling for Ideas, two-way calendar, subtasks, moving entries between days and sections</p></div>
+</div>
+<p style="margin: 0">I used the app daily while building it. When I lost diary entries by forgetting to tap Save, autosave jumped to the top of the backlog.</p>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 72px 0; border-bottom: 1px solid #E4E4E7">
+<div style="flex: 1 1 260px"><p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">04</p><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: -0.02em; line-height: 1.15">The setback: rejected as "spam"</h2></div>
+<div style="flex: 999 1 560px; display: flex; flex-direction: column; gap: 16px; color: #3F4249">
+<p style="margin: 0">In September, Apple rejected the first submission under Guideline 4.3(a): too similar to apps already on the Store. In a crowded category, a "brain dump" name made it look like one more of the same.</p>
+<p style="margin: 0">I found the closest competitor and compared the two honestly. Its "Let go" bucket was the nearest overlap, so I didn't claim that as a difference. I built the case on what really was different: manual entry instead of AI sorting, sections by type instead of urgency, a diary with photos and mood, and native calendar sync.</p>
+<p style="margin: 0">Then I changed the product, not just the wording:</p>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px">
+<li>Dropped "Brain Dump" and renamed the listing <strong style="color: #0A0A0B">FourFold: Journal &amp; Planner</strong></li>
+<li>Widened the scope into a full journal and planner: two-way calendar, subtasks, a richer diary</li>
+<li>Withdrew the old build and resubmitted on 29 October with new screenshots, listing copy and review notes</li>
+</ul>
+<div style="margin-top: 8px; padding: 24px; border-radius: 16px; background: #EEF0FF; color: #0A0A0B">
+<p style="margin: 0; font-family: 'Inter Tight', sans-serif; font-size: 22px; font-weight: 500; letter-spacing: -0.01em">Approved and live on 16 November 2026.</p>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 72px 0; border-bottom: 1px solid #E4E4E7">
+<div style="flex: 1 1 260px"><p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">05</p><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: -0.02em; line-height: 1.15">What it taught me</h2></div>
+<div style="flex: 999 1 560px; display: flex; flex-direction: column; gap: 16px; color: #3F4249">
+<p style="margin: 0"><strong style="color: #0A0A0B">Positioning is part of the product.</strong> The rejection wasn't about code. It was about how the app read next to everything else on the shelf.</p>
+<p style="margin: 0"><strong style="color: #0A0A0B">Be honest about overlap.</strong> Admitting where we were similar made the real differences more credible.</p>
+<p style="margin: 0"><strong style="color: #0A0A0B">Keep one source of truth.</strong> Moving every decision, checklist and review note into one Notion workspace kept a solo project on track through two submissions.</p>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 16px 64px; padding: 72px 0">
+<div style="flex: 1 1 260px"><p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #2F3CFF">06</p><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: -0.02em; line-height: 1.15">What's next</h2></div>
+<div style="flex: 999 1 560px; display: flex; flex-direction: column; gap: 16px; color: #3F4249">
+<p style="margin: 0">Version 1.1 will add a Home Screen widget and Shortcuts, so entries can be added without opening the app, while still respecting the app lock and keeping private entries off the Lock Screen. iPad and Mac versions come after that.</p>
+</div>
+</section>
+
+</div>
+
+<footer style="background: #0A0A0B; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px">
+<p style="margin: 0; font-family: 'Inter Tight', sans-serif; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">Next: Coffee Beans Journal</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="coffee-beans-journal.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #FFFFFF; color: #0A0A0B; font-weight: 500; text-decoration: none">Read the case study →</a>
+<a href="index.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid #3F4249; color: #FFFFFF; font-weight: 500; text-decoration: none">Back to portfolio</a>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
